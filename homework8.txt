@@ -1,0 +1,25 @@
+1. `www.example.com?value1=data1&value2=data2`
+
+2. Escaping a character refers to the process of prefixing certain characters with a special symbol (such as a backslash `\`) or encoding them to prevent misinterpretation during parsing or execution.
+
+3. - 200: OK – The request has succeeded.  
+   - 400: Bad Request – The server could not understand the request due to invalid syntax.  
+   - 401: Unauthorized – Authentication is required and has failed or has not yet been provided.  
+   - 403: Forbidden – The client does not have access rights to the content.  
+   - 404: Not Found – The server cannot find the requested resource.  
+   - 500: Internal Server Error – The server encountered an unexpected condition that prevented it from fulfilling the request.
+
+4. Data validation ensures the accuracy, completeness, and reliability of data by verifying that it conforms to expected formats, ranges, and types. This helps maintain data integrity, prevent security vulnerabilities, and ensure proper application functionality.
+
+5. - Sessions: Temporary data storage mechanisms on the server that retain user-specific information (e.g., login credentials) during their interaction with the application.  
+   - Cookies: Small text files stored on the client-side (browser) to save user preferences or session data across visits to the website.
+
+6. 
+try {
+    $value = 0;
+    if ($value === 0) {
+        throw new Exception("Value cannot be zero");
+    }
+} catch (Exception $e) {
+    echo "Exception: " . $e->getMessage();
+}
